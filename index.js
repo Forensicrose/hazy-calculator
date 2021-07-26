@@ -15,6 +15,13 @@ function calculate(inputs) {
       input2 = 0
     } else {
       input1 = 0
+      // Ignore anything that is not a number ('', , undefined and strings of words. Convert stringified numbers to numbers & follow the comment above when the operator is encountered. 
+    } else if (!isNaN(item)) {
+        if(operator) {
+            input2 = Number(item)
+        }else {
+            input1 = Number(item)
+        }
     }
   })
 }
