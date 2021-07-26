@@ -22,6 +22,9 @@ function calculate(inputs) {
         }else {
             input1 = Number(item)
         }
+        //establish the operators 
+    }if (item === '+', '-', '*', '/') {
+        item = operator
     }
   })
 }
